@@ -1,0 +1,124 @@
+Finexar - Financial Calculators Hub
+Product Requirements Document (PRD)
+1. Product Overview
+Product Name: Finexar
+Platform: React Native Website
+Target Audience: Large companies and financial professionals
+Primary Purpose: Comprehensive financial calculators platform with multi-language support
+2. Core Requirements
+2.1 Splash Screen Specifications
+• Duration: 2 seconds
+• Elements: 
+• Company logo (centered)
+• "Finexar" text/wordmark
+• Loading progress bar
+• Behavior: Auto-dismiss after 2s, transition to ain interface
+2.2 Main Interface Architecture
+2.2.1 Toolbar Area
+Components:
+• Translation button (language selector)
+• History button
+• Application name and logo
+Translation System:
+• Supported Languages: English (default), Arabic, French, Spanish, Russian, Chinese, Japanese
+• Behavior: 
+• Slider/dropdown interface for language selection
+• Real-time translation of all UI elements except app name
+• Language preference persistence across sessions
+• Scope: All pages, history, calculator interfaces
+HistorySystem:
+• Modal/page displaying recent calculations
+• Persistent storage across sessions
+• Chronological order (latest first)
+2.2.2 Search & Category Area
+Search Card:
+• Search bar with filter functionality
+• Real-time calculator filtering
+Category Card:
+• Category buttons for calculator grouping
+• Visual category indicators/icons
+2.2.3 Calculators Display Area
+Layout: Grid of equally-sized cards Card Elements:
+• Category icon
+• Calculator name
+• Navigation trigger to dedicated calculator page
+2.3 Calcultor Pages
+2.3.1 Input Area
+• Form fields appropriate to calculator type
+• Input validation and error handling
+• Clear visual hierarchy
+2.3.2 Output Area
+• Real-time calculation results
+• Formatted output matching calculator purpose
+• Export/save functionality
+3. Technical Specifications
+3.1 Platform Requirements
+• Framework: React Native
+• Deployment: Web platform
+• Browser Support: Modern browsers (Chrome, Firefox, Safari, Edge)
+3.2 Data Persistence
+• Local storage for: 
+• Language preferences
+• Calcultion history
+• User settings
+• Session management for temporary data
+3.3 Performance Requirements
+• Splash screen: 2-second load time
+• Language switching: <200ms response time
+• Calculator operations: Real-time computation
+• Responsive design for various screen sizes
+4. Design System
+4.1 Theme Requirements
+• Mode: Dark theme exclusively
+• Style: Glassmorphism aesthetic
+4.2 Glassmorphism Implementation
+• Semi-transparent backgrounds with blur effects
+• Subtle borders and drop shadows
+• Layered depth percption
+• Applied to: cards, toolbar, buttons, modals
+4.3 Typography & Color
+• Fonts: Professional, elegant typography suitable for corporate use
+• Colors: Refined color palette with high contrast for readability
+• Accessibility: WCAG compliance for text contrast
+4.4 Component Specifications
+• Buttons: Glassmorphic style with hover/active states
+• Cards: Consistent sizing, glassmorphic treatment
+• Modals: Glassmorphic overlays with backdrop blur
+5. User Experience Flow
+• Entry: Splash screen (2s) → Main iterface
+• Navigation: Main interface → Calculator selection → Calculator page
+• Calculation: Input → Real-time output → History storage
+• Language: Translation button → Language selection → Interface update
+• History: History button → Modal display → Previous calculations
+6. Content Requirements
+6.1 Calculator Categories
+Note: Specific calculator types and categories need to be defined based on business requirements
+6.2 Localization
+• Translation files for 7 supported languages
+• RTL support for Arabic
+"Cultural number formatting considerations
+7. Implementation Priorities
+Phase 1:
+• Core UI structure
+• Splash screen implementation
+• Basic calculator framework
+Phase 2:
+• Translation system integration
+• History functionality
+• Glassmorphism design implementation
+Phase 3:
+• Calculator-specific implementations
+• Performance optimization
+• Testing and refinement
+8. Success Metrics
+• Load time performance
+• Language switching accuracy
+• Calculator computation accuracy
+• User session persistence
+• Cross-broser compatibility
+9. Technical Considerations
+Given the error message in your document mentioning MediaPipe face mesh components, ensure that any facial recognition or camera-based features are properly implemented if they're part of specific calculator functionalities. The current error suggests missing exports that would need to be resolved in the build configuration.
+
+
+
+
